@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.pj.mapper.UserMapper">
+    <select id="queryUserById" resultType="String">
+		select user_name from user_t where id=1
+
+
+	</select>
+
+    <!--<select id="queryUserPage" resultType="User">-->
+		<!--select * from tb_user limit #{start},#{rows}-->
+	<!--</select>-->
+    <!--<select id="queryCount" resultType="Long">-->
+		<!--select count(*) from tb_user-->
+	<!--</select>-->
+    <!--<select id="queryUserAll" resultType="User">-->
+		<!--select * from tb_user-->
+	<!--</select>-->
+
+    <!--<insert id="addUser" useGeneratedKeys="true">-->
+		<!--INSERT INTO tb_user (user_name, password, name, age, sex, birthday, created,-->
+		<!--updated )-->
+		<!--VALUES-->
+		<!--(#{userName}, #{password}, #{name}, #{age}, #{sex}, #{birthday}, now(),-->
+		<!--now() );-->
+	<!--</insert>-->
+    <!--<delete id="deleteById">-->
+        <!--delete from tb_user where id in-->
+        <!--<foreach collection="ids" item="id" separator="," open="(" close=")">-->
+            <!--#{id}-->
+        <!--</foreach>-->
+    <!--</delete>-->
+</mapper>
